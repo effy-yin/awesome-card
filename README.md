@@ -12,11 +12,11 @@ Full Screen Image Blur and Enlarge
 ```
 2. add wrapper and coresponding class in html
 ```html
-    <div class="fullscreen-wrapper">
-        <div class="fullscreen" style="background-image: url(./banner.jpg); ">
-            <img src="./banner.jpg" alt="">
-        </div>
+<div class="fullscreen-wrapper">
+    <div class="fullscreen" style="background-image: url(./banner.jpg); ">
+        <img src="./banner.jpg" alt="">
     </div>
+</div>
 ```
 
 ## Credit
