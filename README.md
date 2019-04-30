@@ -21,4 +21,4 @@ Full Screen Image Blur and Enlarge
 ```
 
 ## Credit
-Created by [@dodo糯](http://weibo.com/dodoroy), *[blog](http://effy.me)*
+Created by [@dodo糯](http://weibo.com/dodoroy), *[blog](http://www.effy.me)*
