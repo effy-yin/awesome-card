@@ -3,7 +3,7 @@
 ## About
 
 Full Screen Image Blur and Enlarge
-![screen](https://raw.githubusercontent.com/dodoroy/blur-enlarger/master/demo.png)
+![screen](https://raw.githubusercontent.com/dodoroy/blur-enlarger/master/demo.gif)
 
 ## Usage
 1. include the css
@@ -14,7 +14,7 @@ Full Screen Image Blur and Enlarge
 ```html
 <div class="fullscreen-wrapper">
     <div class="fullscreen" style="background-image: url(./banner.jpg); ">
-        <img src="./banner.jpg" alt="">
+        <!-- <img src="./banner.jpg" alt=""> -->
     </div>
 </div>
 ```

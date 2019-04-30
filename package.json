@@ -1,0 +1,27 @@
+{
+  "name": "blur-enlarger",
+  "version": "1.0.0",
+  "description": "image blur and enlarge effect when mouse hover",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dodoroy/blur-enlarger.git"
+  },
+  "keywords": [
+    "image",
+    "enlarge"
+  ],
+  "author": "Effy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dodoroy/blur-enlarger/issues"
+  },
+  "homepage": "https://github.com/dodoroy/blur-enlarger#readme",
+  "devDependencies": {
+    "gulp": "^4.0.1",
+    "gulp-sass": "^4.0.2"
+  }
+}
