@@ -9,7 +9,7 @@ Full Screen Image Blur and Enlarge
 ## Usage
 1. include the css
 ```html
-<link rel="stylesheet" href="./fullscreen.css">
+<link rel="stylesheet" href="../dist/fullscreen.css">
 ```
 2. add wrapper and coresponding class in html
 ```html

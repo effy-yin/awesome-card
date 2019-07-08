@@ -1,17 +1,17 @@
 'use strict';
 
 const {src, dest, watch} = require('gulp');
-const sass = require('gulp-sass')
-sass.compiler = require('node-sass')
+const sass = require('gulp-sass');
+sass.compiler = require('node-sass');
 
 function css(cb) {
-    src('*.scss')
+    src('./src/*.scss')
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-    .pipe(dest('./'))
+    .pipe(dest('./dist/'));
     cb()
 }
 
-watch('*.scss', {ignoreInitial: false}, css)
+watch('*.scss', {ignoreInitial: false}, css);
 
 exports.default = css;
 
