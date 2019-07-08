@@ -4,7 +4,7 @@
 
 Full Screen Image Blur and Enlarge
 
-![screen](https://raw.githubusercontent.com/dodoroy/blur-enlarger/master/demo.gif)
+![screen](https://raw.githubusercontent.com/dodoroy/blur-enlarger/master/example/demo.gif)
 
 ## Usage
 1. include the css
