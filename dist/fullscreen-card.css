@@ -1,0 +1,1 @@
+.fullscreen-card{position:relative;width:800px;height:370px;background:#263238;overflow:hidden}.fullscreen-card .fullscreen{position:absolute;top:0;left:0;width:100%;height:100%;background-repeat:no-repeat;background-size:cover;background-position:50% 50%;opacity:.5;transition:1s all ease}.fullscreen-card:hover .fullscreen{opacity:1;transform:scale(1.2)}

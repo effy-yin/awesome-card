@@ -1,25 +1,26 @@
 {
-  "name": "blur-enlarger",
+  "name": "awesome-card",
   "version": "1.0.0",
-  "description": "image blur and enlarge effect when mouse hover",
+  "description": "A collection of awesome card",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dodoroy/blur-enlarger.git"
+    "url": "git+https://github.com/dodoroy/awesome-card.git"
   },
   "keywords": [
-    "image",
-    "enlarge"
+    "awesome",
+    "card",
+    "css"
   ],
   "author": "Effy",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dodoroy/blur-enlarger/issues"
+    "url": "https://github.com/dodoroy/awesome-card/issues"
   },
-  "homepage": "https://github.com/dodoroy/blur-enlarger#readme",
+  "homepage": "https://github.com/dodoroy/awesome-card#readme",
   "devDependencies": {
     "gulp": "^4.0.1",
     "gulp-sass": "^4.0.2"
