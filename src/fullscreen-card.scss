@@ -1,7 +1,7 @@
 /* ------------------------------------------------------------ *\
-	Fullscreen
+	Fullscreen Card
 \* ------------------------------------------------------------ */
-.fullscreen-wrapper {
+.fullscreen-card {
     position: relative;
     width: 800px;
     height: 370px;
@@ -19,10 +19,6 @@
         background-position: 50% 50%;
         opacity: .5;
         transition: 1s all ease;
-
-        // img {
-        //     display: none;
-        // }
     }
 
     &:hover .fullscreen {

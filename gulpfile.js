@@ -5,13 +5,15 @@ const sass = require('gulp-sass');
 sass.compiler = require('node-sass');
 
 function css(cb) {
-    src('./src/*.scss')
-    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-    .pipe(dest('./dist/'));
-    cb()
+    console.log(123)
+    return src('./src/*.scss')
+        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(dest('./dist/'), {sourcemaps: true});
+        cb()
 }
 
-watch('*.scss', {ignoreInitial: false}, css);
 
+
+watch(['src/*.scss'], css);
 exports.default = css;
 

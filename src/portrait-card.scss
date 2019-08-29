@@ -1,0 +1,205 @@
+/* ------------------------------------------------------------ *\
+	Portrait Card
+\* ------------------------------------------------------------ */
+.portrait-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 10;
+    transition: z-index 0.4s linear;
+    -webkit-transition: z-index 0.4s linear;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    .thumbnail {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+
+        .wrapper {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            overflow: hidden;
+            -webkit-transition: -webkit-transform 0.4s ease, box-shadow 0.4s ease;
+            -webkit-transition: transform 0.4s ease, box-shadow 0.4s ease;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+            .art {
+                width: calc(100% + 4px);
+                opacity: 0.96;
+                -webkit-transition: opacity 1s, -webkit-transform 12s cubic-bezier(0.23, 1, 0.32, 1);
+                -webkit-transition: opacity 1s, transform 12s cubic-bezier(0.23, 1, 0.32, 1);
+                transition: opacity 1s, transform 12s cubic-bezier(0.23, 1, 0.32, 1);
+            }
+            .baseBg,
+            .gradient,
+            .highlight,
+            .scrim {
+                position: absolute;
+                top: -2px;
+                right: -2px;
+                bottom: -2px;
+                left: -2px;
+            }
+
+            .baseBg {
+                background-color:hsla(195, 50%, 40%, 1);
+            }
+            .gradient {
+                background-image:linear-gradient(15deg, hsla(195, 50%, 40%, 1) 5%, hsla(195, 50%, 40%, 0) 75%);
+            }
+            .highlight {
+                opacity:0.4;
+                background-image:radial-gradient(circle at center bottom, hsla(195, 100%, 60%, 1) 10%, hsla(195, 100%, 60%, 0) 60%);
+            }
+            .scrim {
+                opacity:0.25;
+                background-image:linear-gradient(345deg, #000 5%, transparent 25%)
+            }
+        }
+        .content {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: 32px;
+            .btns {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                svg {
+                    vertical-align: bottom;
+                    height: 48px;
+                    width: 48px;s
+                    circle {
+                        fill: transparent;
+                    }
+                }
+            }
+        }
+    }
+
+    .metadata {
+        position: absolute;
+        width: calc(100% - (2 * 32px));
+        bottom: calc(32px + 60px);
+        left: 32px;
+        color: #fff;
+        .title {
+            font-size: 2em;
+            font-weight: 300;
+            line-height: 40px;
+            -webkit-letter-spacing: -0.5px;
+            -moz-letter-spacing: -0.5px;
+            -ms-letter-spacing: -0.5px;
+            letter-spacing: -0.5px;
+        }
+        .hoverData {
+            display: block;
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            -webkit-transition: max-height 0.4s ease, opacity 0.4s ease 0.2s;
+            transition: max-height 0.4s ease, opacity 0.4s ease 0.2s;
+            margin-top: 12px;
+            &>div {
+                margin-bottom: 8px;
+            }
+        }
+    }
+
+
+
+    &:hover {
+        z-index: 20;
+        -webkit-transition: z-index 0s linear;
+        transition: z-index 0s linear;
+        .wrapper {
+            -webkit-transform: scale(1.03);
+            -ms-transform: scale(1.03);
+            transform: scale(1.03);
+            box-shadow: 0 24px 88px -8px rgba(30, 30, 30, 0.4);
+            .art {
+                opacity: 0.4;
+                -webkit-transform: scale(1.08);
+                -ms-transform: scale(1.08);
+                transform: scale(1.08);
+            }
+        }
+
+        .hoverData {
+            max-height: 10em;
+            opacity: 1;
+        }
+    }
+}
+
+.item {
+    &.green .portrait-card .thumbnail .wrapper {
+        .baseBg {
+            background-color: hsla(130, 50%, 40%, 1);
+        }
+        .gradient {
+            background-image:linear-gradient(15deg, hsla(130, 50%, 40%, 1) 5%, hsla(130, 50%, 40%, 0) 75%);
+        }
+        .highlight {
+            background-image:radial-gradient(circle at center bottom, hsla(130, 100%, 60%, 1) 10%, hsla(130, 100%, 60%, 0) 60%)
+        }
+
+    }
+
+    &.blue .portrait-card .thumbnail .wrapper {
+        .baseBg {
+            background-color: hsla(190, 50%, 40%, 1);;
+        }
+        .gradient {
+            background-image:linear-gradient(15deg, hsla(190, 50%, 40%, 1) 5%, hsla(190, 50%, 40%, 0) 75%)
+        }
+        .highlight {
+            background-image:radial-gradient(circle at center bottom, hsla(190, 100%, 60%, 1) 10%, hsla(190, 100%, 60%, 0) 60%)
+        }
+    }
+
+    &.red .portrait-card .thumbnail .wrapper {
+        .baseBg {
+            background-color: hsla(0, 50%, 40%, 1);
+        }
+        .gradient {
+            background-image:linear-gradient(15deg, hsla(0, 50%, 40%, 1) 5%, hsla(0, 50%, 40%, 0) 75%);
+        }
+        .highlight {
+            background-image:radial-gradient(circle at center bottom, hsla(0, 100%, 60%, 1) 10%, hsla(0, 100%, 60%, 0) 60%)
+        }
+    }
+
+    &.brown .portrait-card .thumbnail .wrapper {
+        .baseBg {
+            background-color: hsla(30, 50%, 40%, 1);
+        }
+        .gradient {
+            background-image:linear-gradient(15deg, hsla(30, 50%, 40%, 1) 5%, hsla(30, 50%, 40%, 0) 75%)
+        }
+        .highlight {
+            background-image:radial-gradient(circle at center bottom, hsla(30, 100%, 60%, 1) 10%, hsla(30, 100%, 60%, 0) 60%)
+        }
+    }
+
+    &.yellow .portrait-card .thumbnail .wrapper {
+        .baseBg {
+            background-color:hsla(55, 50%, 40%, 1);
+        }
+        .gradient {
+            background-image:linear-gradient(15deg, hsla(55, 50%, 40%, 1) 5%, hsla(55, 50%, 40%, 0) 75%)
+        }
+        .highlight {
+            background-image:radial-gradient(circle at center bottom, hsla(55, 100%, 60%, 1) 10%, hsla(55, 100%, 60%, 0) 60%)
+        }
+    }
+}
